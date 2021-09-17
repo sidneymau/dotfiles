@@ -36,7 +36,7 @@ hi   TabLine                  ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   ModeMsg                  ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   MoreMsg                  ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   NonText                  ctermfg=fg    ctermbg=NONE  cterm=NONE
-hi   Pmenu                    ctermfg=NONE  ctermbg=15    cterm=NONE
+hi   Pmenu                    ctermfg=NONE  ctermbg=7     cterm=NONE
 hi   PmenuThumb               ctermfg=NONE  ctermbg=fg    cterm=NONE
 hi   PreProc                  ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   Question                 ctermfg=fg    ctermbg=NONE  cterm=NONE
@@ -63,21 +63,19 @@ hi   WarningMsg               ctermfg=94    ctermbg=229   cterm=NONE
 hi   WhichKeySeperator        ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   Whitespace               ctermfg=249   ctermbg=NONE  cterm=NONE
 
-" These are Vim only
+" " These are Vim only
 if !has('nvim')
   hi Tooltip                  ctermfg=fg    ctermbg=253   cterm=NONE
   hi Menu                     ctermfg=fg    ctermbg=253   cterm=NONE
 endif
 
-hi Comment                  ctermfg=12  ctermbg=NONE cterm=NONE
+hi Comment                    ctermfg=12    ctermbg=NONE  cterm=NONE
 
-hi FoldColumn               ctermfg=13  ctermbg=NONE cterm=NONE
-hi Folded                   ctermfg=13  ctermbg=NONE cterm=NONE
+hi FoldColumn                 ctermfg=8     ctermbg=NONE  cterm=NONE
+hi Folded                     ctermfg=8     ctermbg=NONE  cterm=NONE
 
-" hi SignColumn               ctermfg=243  ctermbg=254  cterm=NONE
-" hi LineNr                   ctermfg=243  ctermbg=254  cterm=NONE
-hi SignColumn               ctermfg=241  ctermbg=255  cterm=NONE
-hi LineNr                   ctermfg=7  ctermbg=NONE cterm=NONE
+hi SignColumn                 ctermfg=241   ctermbg=255   cterm=NONE
+hi LineNr                     ctermfg=7     ctermbg=NONE  cterm=NONE
 
 hi! link EndOfBuffer                  NonText
 hi! link QuickFixLine                 Search

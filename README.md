@@ -1,5 +1,6 @@
 # dotfiles
+
 Personal configuration files
-- neovim
-- tmux
-- alacritty
+- [alacritty](https://alacritty.org/)
+- [neovim](https://neovim.io/)
+- [tmux](https://github.com/tmux/tmux/wiki)

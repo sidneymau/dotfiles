@@ -111,7 +111,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: "Fira Code"
+    family: "Iosevka Term"
 
     # The `style` can be specified to pick a specific face.
     style: Light
@@ -122,21 +122,21 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: "Fira Code"
+    family: "Iosevka Term"
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    style: Light Bold
 
   # Italic font face
-  #italic:
+  italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: "Fira Code"
+    family: "Iosevka Term"
 
     # The `style` can be specified to pick a specific face.
-    #style: Italic
+    style: Light Italic
 
   # Bold italic font face
   #bold_italic:

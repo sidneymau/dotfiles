@@ -42,7 +42,7 @@ hi   PreProc                  ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   Question                 ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   Search                   ctermfg=62    ctermbg=189   cterm=NONE
 hi   Visual                   ctermfg=19    ctermbg=147   cterm=NONE
-hi   Special                  ctermfg=fg    ctermbg=NONE  cterm=NONE
+hi   Special                  ctermfg=12    ctermbg=NONE  cterm=italic
 hi   SpecialKey               ctermfg=249   ctermbg=NONE  cterm=NONE
 hi   SpellBad                 ctermfg=124   ctermbg=224   cterm=NONE
 hi   SpellCap                 ctermfg=NONE  ctermbg=NONE  cterm=undercurl
@@ -52,7 +52,7 @@ hi   Statement                ctermfg=fg    ctermbg=NONE  cterm=italic
 hi   StatusLine               ctermfg=7     ctermbg=fg    cterm=NONE
 hi   StatusLineNC             ctermfg=fg    ctermbg=0     cterm=NONE
 hi   Terminal                 ctermfg=fg    ctermbg=254   cterm=NONE
-hi   Todo                     ctermfg=NONE  ctermbg=NONE  cterm=underline
+hi   Todo                     ctermfg=255  ctermbg=01  cterm=underline
 hi   ToolbarButton            ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   ToolbarLine              ctermfg=NONE  ctermbg=NONE  cterm=NONE
 hi   Type                     ctermfg=NONE  ctermbg=NONE  cterm=italic
@@ -61,7 +61,7 @@ hi   VertSplit                ctermfg=251   ctermbg=NONE  cterm=NONE
 hi   VisualNOS                ctermfg=NONE  ctermbg=255   cterm=NONE
 hi   WarningMsg               ctermfg=94    ctermbg=229   cterm=NONE
 hi   WhichKeySeperator        ctermfg=fg    ctermbg=NONE  cterm=NONE
-hi   Whitespace               ctermfg=249   ctermbg=NONE  cterm=NONE
+hi   Whitespace               ctermfg=01   ctermbg=NONE  cterm=NONE
 
 " " These are Vim only
 if !has('nvim')
@@ -69,7 +69,7 @@ if !has('nvim')
   hi Menu                     ctermfg=fg    ctermbg=253   cterm=NONE
 endif
 
-hi Comment                    ctermfg=12    ctermbg=NONE  cterm=NONE
+hi Comment                    ctermfg=4    ctermbg=NONE  cterm=NONE
 
 hi FoldColumn                 ctermfg=8     ctermbg=NONE  cterm=NONE
 hi Folded                     ctermfg=8     ctermbg=NONE  cterm=NONE
@@ -84,7 +84,7 @@ hi! link Character                    Constant
 hi! link Conditional                  Statement
 hi! link Define                       PreProc
 hi! link Debug                        Special
-hi! link Delimiter                    Special
+hi! link Delimiter                    Constant
 hi! link Exception                    Normal
 hi! link Float                        Number
 hi! link Function                     Identifier
@@ -95,7 +95,7 @@ hi! link Macro                        PreProc
 hi! link Number                       Constant
 hi! link Operator                     Normal
 hi! link PreCondit                    PreProc
-hi! link Repeat                       Normal
+hi! link Repeat                       Statement
 hi! link SpecialChar                  Special
 hi! link SpecialComment               Special
 hi! link StorageClass                 Type

@@ -52,7 +52,7 @@ hi   Statement                ctermfg=fg    ctermbg=NONE  cterm=italic
 hi   StatusLine               ctermfg=7     ctermbg=fg    cterm=NONE
 hi   StatusLineNC             ctermfg=fg    ctermbg=0     cterm=NONE
 hi   Terminal                 ctermfg=fg    ctermbg=254   cterm=NONE
-hi   Todo                     ctermfg=255  ctermbg=01  cterm=underline
+hi   Todo                     ctermfg=01    ctermbg=NONE  cterm=underline
 hi   ToolbarButton            ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   ToolbarLine              ctermfg=NONE  ctermbg=NONE  cterm=NONE
 hi   Type                     ctermfg=NONE  ctermbg=NONE  cterm=italic

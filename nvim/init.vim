@@ -1,5 +1,4 @@
 " Colorscheme
-set list listchars=tab:\ \ ,trail:·
 colorscheme smau
 
 " Hybrid line numbering

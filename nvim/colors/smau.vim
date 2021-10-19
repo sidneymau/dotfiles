@@ -49,8 +49,8 @@ hi   SpellCap                 ctermfg=NONE  ctermbg=NONE  cterm=undercurl
 hi   SpellLocal               ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   SpellRare                ctermfg=NONE  ctermbg=NONE  cterm=NONE
 hi   Statement                ctermfg=fg    ctermbg=NONE  cterm=italic
-hi   StatusLine               ctermfg=7     ctermbg=fg    cterm=NONE
-hi   StatusLineNC             ctermfg=fg    ctermbg=0     cterm=NONE
+hi   StatusLine               ctermfg=15    ctermbg=fg    cterm=NONE
+hi   StatusLineNC             ctermfg=8     ctermbg=fg    cterm=NONE
 hi   Terminal                 ctermfg=fg    ctermbg=254   cterm=NONE
 hi   Todo                     ctermfg=01    ctermbg=NONE  cterm=underline
 hi   ToolbarButton            ctermfg=fg    ctermbg=NONE  cterm=NONE

@@ -31,7 +31,7 @@ hi   Identifier               ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   Ignore                   ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   IncSearch                ctermfg=189   ctermbg=62    cterm=NONE
 hi   InfoMsg                  ctermfg=62    ctermbg=189   cterm=NONE
-hi   MatchParen               ctermfg=NONE  ctermbg=252   cterm=bold
+hi   MatchParen               ctermfg=NONE  ctermbg=fg   cterm=bold
 hi   TabLine                  ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   ModeMsg                  ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   MoreMsg                  ctermfg=fg    ctermbg=NONE  cterm=NONE

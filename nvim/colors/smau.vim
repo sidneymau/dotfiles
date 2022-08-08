@@ -11,14 +11,14 @@ endif
 
 let g:colors_name = 'smau'
 
-hi   Normal                   ctermfg=0     ctermbg=NONE  cterm=NONE
+hi   Normal                   ctermfg=0     ctermbg=NONE  cterm=none
 hi   ColorColumn              ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   Conceal                  ctermfg=251   ctermbg=NONE  cterm=NONE
 hi   Constant                 ctermfg=8     ctermbg=NONE  cterm=italic
-hi   CursorColumn             ctermfg=NONE  ctermbg=255   cterm=NONE
-hi   Cursor                   ctermfg=NONE  ctermbg=fg    cterm=NONE
-hi   CursorIM                 ctermfg=NONE  ctermbg=fg    cterm=NONE
-hi   CursorLine               ctermfg=fg    ctermbg=255   cterm=NONE
+hi   CursorColumn             ctermfg=NONE  ctermbg=NONE  cterm=NONE
+hi   Cursor                   cterm=reverse
+hi   CursorIM                 cterm=reverse
+hi   CursorLine               cterm=NONE
 hi   CursorLineNr             ctermfg=fg    ctermbg=7     cterm=NONE
 hi   DiffAdd                  ctermfg=70    ctermbg=193   cterm=NONE
 hi   DiffChange               ctermfg=94    ctermbg=229   cterm=NONE
@@ -31,8 +31,9 @@ hi   Identifier               ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   Ignore                   ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   IncSearch                ctermfg=189   ctermbg=62    cterm=NONE
 hi   InfoMsg                  ctermfg=62    ctermbg=189   cterm=NONE
-hi   MatchParen               ctermfg=NONE  ctermbg=fg    cterm=bold
-hi   TabLine                  ctermfg=fg    ctermbg=NONE  cterm=NONE
+hi   MatchParen               ctermbg=7                  cterm=None
+hi   TabLine                  ctermfg=fg    ctermbg=NONE  cterm=underline
+hi   TablineSel               cterm=reverse
 hi   ModeMsg                  ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   MoreMsg                  ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   NonText                  ctermfg=fg    ctermbg=NONE  cterm=NONE
@@ -49,8 +50,8 @@ hi   SpellCap                 ctermfg=NONE  ctermbg=NONE  cterm=undercurl
 hi   SpellLocal               ctermfg=fg    ctermbg=NONE  cterm=NONE
 hi   SpellRare                ctermfg=NONE  ctermbg=NONE  cterm=NONE
 hi   Statement                ctermfg=fg    ctermbg=NONE  cterm=italic
-hi   StatusLine               ctermfg=15    ctermbg=fg    cterm=NONE
-hi   StatusLineNC             ctermfg=8     ctermbg=fg    cterm=NONE
+hi   StatusLine               cterm=reverse
+hi   StatusLineNC             ctermfg=8 cterm=reverse
 hi   Terminal                 ctermfg=fg    ctermbg=254   cterm=NONE
 hi   Todo                     ctermfg=01    ctermbg=NONE  cterm=underline
 hi   ToolbarButton            ctermfg=fg    ctermbg=NONE  cterm=NONE
@@ -61,7 +62,7 @@ hi   VertSplit                ctermfg=251   ctermbg=NONE  cterm=NONE
 hi   VisualNOS                ctermfg=NONE  ctermbg=255   cterm=NONE
 hi   WarningMsg               ctermfg=94    ctermbg=229   cterm=NONE
 hi   WhichKeySeperator        ctermfg=fg    ctermbg=NONE  cterm=NONE
-hi   Whitespace               ctermfg=01   ctermbg=NONE  cterm=NONE
+hi   Whitespace               ctermfg=9    ctermbg=NONE  cterm=NONE
 
 " " These are Vim only
 if !has('nvim')
@@ -69,7 +70,7 @@ if !has('nvim')
   hi Menu                     ctermfg=fg    ctermbg=253   cterm=NONE
 endif
 
-hi Comment                    ctermfg=4    ctermbg=NONE  cterm=NONE
+hi Comment                    ctermfg=4    ctermbg=NONE  cterm=NONE  " 12
 
 hi FoldColumn                 ctermfg=8     ctermbg=NONE  cterm=NONE
 hi Folded                     ctermfg=8     ctermbg=NONE  cterm=NONE
@@ -110,7 +111,6 @@ hi! link diffComment                  Comment
 hi! link PmenuSel                     WildMenu
 hi! link StatusLineTerm               StatusLine
 hi! link StatusLineTermNC             StatusLineNC
-hi! link TabLineSel                   Search
 hi! link TabLineFill                  TabLine
 hi! link lCursor                      Cursor
 hi! link jsParensError                Normal
@@ -156,14 +156,14 @@ hi! link vimHiKeyList                 Normal
 hi! link vimHiGroup                   Normal
 hi! link vimHiCTerm                   Normal
 hi! link vimHiCTermFgBg               Normal
-hi!  link                     vimHiGuiFgBg  Normal
+hi! link vimHiGuiFgBg                 Normal
 
 " -------------- Markdown -----------------------
-hi  mkdHeading               ctermfg=NONE ctermbg=NONE cterm=underline
-hi  mkdItalic                ctermfg=NONE ctermbg=NONE cterm=italic
-hi  markdownBold             ctermfg=NONE ctermbg=NONE cterm=bold
-hi  markdownUrl              ctermfg=NONE ctermbg=NONE cterm=underline
-hi  markdownHeadingDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE
+hi  mkdHeading                        ctermfg=NONE ctermbg=NONE cterm=underline
+hi  mkdItalic                         ctermfg=NONE ctermbg=NONE cterm=italic
+hi  markdownBold                      ctermfg=NONE ctermbg=NONE cterm=bold
+hi  markdownUrl                       ctermfg=NONE ctermbg=NONE cterm=underline
+hi  markdownHeadingDelimiter          ctermfg=NONE ctermbg=NONE cterm=NONE
 hi  mkdCode                           ctermfg=241  ctermbg=NONE  cterm=NONE
 hi  mkdCodeDelimiter                  ctermfg=241  ctermbg=NONE  cterm=NONE
 hi! link markdownItalic               mkdItalic
@@ -181,19 +181,19 @@ hi! link markdownLinkDelimiter        folded
 hi! link markdownLinkTextDelimiter    folded
 
 " -------------- Dirvish ------------------------
-hi   DirvishPathTail          ctermfg=NONE  ctermbg=NONE  cterm=bold
-hi! link DirvishArg                   Search
+hi  DirvishPathTail          ctermfg=NONE  ctermbg=NONE  cterm=bold
+hi! link DirvishArg          Search
 
 " -------------- Help ---------------------------
-hi   helpHyperTextJump        ctermfg=NONE ctermbg=NONE cterm=underline
-hi   helpHeadline             ctermfg=NONE ctermbg=NONE cterm=bold
-hi! link helpExample                  Normal
-hi! link helpCommand                  Constant
-hi! link helpBacktick                 Constant
+hi  helpHyperTextJump        ctermfg=NONE ctermbg=NONE cterm=underline
+hi  helpHeadline             ctermfg=NONE ctermbg=NONE cterm=bold
+hi! link helpExample         Normal
+hi! link helpCommand         Constant
+hi! link helpBacktick        Constant
 
 " -------------- XML ----------------------------
 hi! link xmlProcessingDelim Normal
-hi xmlTagName ctermfg=NONE ctermbg=NONE cterm=NONE
+hi  xmlTagName ctermfg=NONE ctermbg=NONE cterm=NONE
 
 " -------------- nvim-hlslens -------------------
 hi! link HlSearchLensNear StatusLine

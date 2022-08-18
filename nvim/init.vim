@@ -11,7 +11,7 @@ set foldmethod=manual
 set nofoldenable
 
 " Tabs
-set tabstop=2
+set tabstop=4
 set shiftwidth=4
 set smarttab  " default on
 " set expandtab " To insert a real tab when 'expandtab' is on, use CTRL-V<Tab>.

@@ -1,5 +1,7 @@
 " Colorscheme
+set background=light
 colorscheme smau
+" colorscheme quiet
 
 " Hybrid line numbering
 set number
@@ -11,14 +13,15 @@ set foldmethod=manual
 set nofoldenable
 
 " Tabs
-set tabstop=4
-set shiftwidth=4
-set smarttab  " default on
+set tabstop=2
+set shiftwidth=2
+" set smarttab  " default on
+set noexpandtab
 " set expandtab " To insert a real tab when 'expandtab' is on, use CTRL-V<Tab>.
 " autocmd FileType make setlocal noexpandtab " Expand tabulations in Makefiles
 
 " Indentation
-set autoindent
+" set autoindent
 set smartindent
 
 " Undo file
@@ -32,8 +35,13 @@ set backupdir=~/.local/share/nvim/backup
 set clipboard=unnamedplus
 
 " Recognize filetype and indent accordingly
-filetype plugin indent on
+" filetype plugin indent on
 
 " Show hidden characters
+" set listchars=tab:>—,trail:-
+set listchars=tab:│\ ,trail:-
+" set listchars=tab:\|\ ,trail:-
 set list
-set listchars=tab:>—,trail:-
+
+" Disable mouse
+set mouse=

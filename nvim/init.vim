@@ -1,7 +1,6 @@
 " Colorscheme
-set background=light
+" set background=dark
 colorscheme smau
-" colorscheme quiet
 
 " Hybrid line numbering
 set number
@@ -16,8 +15,8 @@ set nofoldenable
 set tabstop=2
 set shiftwidth=2
 " set smarttab  " default on
-set noexpandtab
-" set expandtab " To insert a real tab when 'expandtab' is on, use CTRL-V<Tab>.
+" set noexpandtab
+set expandtab " To insert a real tab when 'expandtab' is on, use CTRL-V<Tab>.
 " autocmd FileType make setlocal noexpandtab " Expand tabulations in Makefiles
 
 " Indentation

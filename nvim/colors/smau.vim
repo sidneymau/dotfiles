@@ -12,81 +12,81 @@ endif
 let g:colors_name = 'smau'
 
 if &background == "dark"
-    hi	Normal					ctermfg=15	ctermbg=NONE	cterm=none
-    hi	Constant				ctermfg=7	ctermbg=NONE	cterm=italic
-    hi	CursorLineNr				ctermfg=fg	ctermbg=8	cterm=NONE
-    hi	MatchParen				ctermbg=8			cterm=None
-    hi	Comment					ctermfg=12	ctermbg=NONE	cterm=NONE  " 12
-    hi	Pmenu					ctermfg=NONE	ctermbg=8	cterm=NONE
+    hi	Normal					ctermfg=15	ctermbg=none	cterm=none
+    hi	Constant				ctermfg=7	ctermbg=none	cterm=italic
+    hi	CursorLineNr				ctermfg=fg	ctermbg=8	cterm=none
+    hi	MatchParen				ctermbg=8			cterm=none
+    hi	Comment					ctermfg=12	ctermbg=none	cterm=none
+    hi	Pmenu					ctermfg=none	ctermbg=8	cterm=none
 else
-    hi	Normal					ctermfg=0	ctermbg=NONE	cterm=none
-    hi	Constant				ctermfg=8	ctermbg=NONE	cterm=italic
-    hi	CursorLineNr				ctermfg=fg	ctermbg=7	cterm=NONE
-    hi	MatchParen				ctermbg=7			cterm=None
-    hi	Comment					ctermfg=4	ctermbg=NONE	cterm=NONE  " 12
-    hi	Pmenu					ctermfg=NONE	ctermbg=7	cterm=NONE
+    hi	Normal					ctermfg=0	ctermbg=none	cterm=none
+    hi	Constant				ctermfg=8	ctermbg=none	cterm=italic
+    hi	CursorLineNr				ctermfg=fg	ctermbg=7	cterm=none
+    hi	MatchParen				ctermbg=7			cterm=none
+    hi	Comment					ctermfg=4	ctermbg=none	cterm=none
+    hi	Pmenu					ctermfg=none	ctermbg=7	cterm=none
 endif
 
-hi	ColorColumn				ctermfg=02	ctermbg=NONE	cterm=NONE
-hi	Conceal					ctermfg=251	ctermbg=NONE	cterm=NONE
-hi	CursorColumn				ctermfg=NONE	ctermbg=NONE	cterm=NONE
+hi	ColorColumn				ctermfg=02	ctermbg=none	cterm=none
+hi	Conceal					ctermfg=251	ctermbg=none	cterm=none
+hi	CursorColumn				ctermfg=none	ctermbg=none	cterm=none
 hi	Cursor									cterm=reverse
 hi	CursorIM								cterm=reverse
-hi	CursorLine								cterm=NONE
-hi	DiffAdd					ctermfg=70	ctermbg=193	cterm=NONE
-hi	DiffChange				ctermfg=94	ctermbg=229	cterm=NONE
-hi	DiffDelete				ctermfg=124	ctermbg=224	cterm=NONE
-hi	DiffText				ctermfg=25	ctermbg=195	cterm=NONE
-hi	Directory				ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	Error					ctermfg=124	ctermbg=224	cterm=NONE
-hi	ErrorMsg				ctermfg=124	ctermbg=224	cterm=NONE
-hi	Identifier				ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	Ignore					ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	IncSearch				ctermfg=189	ctermbg=62	cterm=NONE
-hi	InfoMsg					ctermfg=62	ctermbg=189	cterm=NONE
-hi	TabLine					ctermfg=fg	ctermbg=NONE	cterm=underline
+hi	CursorLine								cterm=none
+hi	DiffAdd					ctermfg=70	ctermbg=193	cterm=none
+hi	DiffChange				ctermfg=94	ctermbg=229	cterm=none
+hi	DiffDelete				ctermfg=124	ctermbg=224	cterm=none
+hi	DiffText				ctermfg=25	ctermbg=195	cterm=none
+hi	Directory				ctermfg=fg	ctermbg=none	cterm=none
+hi	Error					ctermfg=124	ctermbg=224	cterm=none
+hi	ErrorMsg				ctermfg=124	ctermbg=224	cterm=none
+hi	Identifier				ctermfg=fg	ctermbg=none	cterm=none
+hi	Ignore					ctermfg=fg	ctermbg=none	cterm=none
+hi	IncSearch				ctermfg=189	ctermbg=62	cterm=none
+hi	InfoMsg					ctermfg=62	ctermbg=189	cterm=none
+hi	TabLine					ctermfg=fg	ctermbg=none	cterm=underline
 hi	TablineSel								cterm=reverse
-hi	ModeMsg					ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	MoreMsg					ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	NonText					ctermfg=NONE	ctermbg=NONE	cterm=NONE
-hi	PmenuThumb				ctermfg=NONE	ctermbg=fg	cterm=NONE
-hi	PreProc					ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	Question				ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	Search					ctermfg=62	ctermbg=189	cterm=NONE
-hi	Visual					ctermfg=19	ctermbg=147	cterm=NONE
-hi	Special					ctermfg=12	ctermbg=NONE	cterm=italic
-hi	SpecialKey				ctermfg=249	ctermbg=NONE	cterm=NONE
-hi	SpellBad				ctermfg=124	ctermbg=224	cterm=NONE
-hi	SpellCap				ctermfg=NONE	ctermbg=NONE	cterm=undercurl
-hi	SpellLocal				ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	SpellRare				ctermfg=NONE	ctermbg=NONE	cterm=NONE
-hi	Statement				ctermfg=fg	ctermbg=NONE	cterm=italic
+hi	ModeMsg					ctermfg=fg	ctermbg=none	cterm=none
+hi	MoreMsg					ctermfg=fg	ctermbg=none	cterm=none
+hi	NonText					ctermfg=none	ctermbg=none	cterm=none
+hi	PmenuThumb				ctermfg=none	ctermbg=fg	cterm=none
+hi	PreProc					ctermfg=fg	ctermbg=none	cterm=none
+hi	Question				ctermfg=fg	ctermbg=none	cterm=none
+hi	Search					ctermfg=62	ctermbg=189	cterm=none
+hi	Visual					ctermfg=19	ctermbg=147	cterm=none
+hi	Special					ctermfg=12	ctermbg=none	cterm=italic
+hi	SpecialKey				ctermfg=249	ctermbg=none	cterm=none
+hi	SpellBad				ctermfg=124	ctermbg=224	cterm=none
+hi	SpellCap				ctermfg=none	ctermbg=none	cterm=undercurl
+hi	SpellLocal				ctermfg=fg	ctermbg=none	cterm=none
+hi	SpellRare				ctermfg=none	ctermbg=none	cterm=none
+hi	Statement				ctermfg=fg	ctermbg=none	cterm=italic
 hi	StatusLine								cterm=underline,reverse
 hi	StatusLineNC								cterm=underline
-hi	Terminal				ctermfg=fg	ctermbg=254	cterm=NONE
-hi	Todo					ctermfg=01	ctermbg=NONE	cterm=underline
-hi	ToolbarButton				ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	ToolbarLine				ctermfg=NONE	ctermbg=NONE	cterm=NONE
-hi	Type					ctermfg=NONE	ctermbg=NONE	cterm=italic
-hi	Underlined				ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	VertSplit				ctermfg=251	ctermbg=NONE	cterm=NONE
-hi	VisualNOS				ctermfg=NONE	ctermbg=255	cterm=NONE
-hi	WarningMsg				ctermfg=94	ctermbg=229	cterm=NONE
-hi	WhichKeySeperator			ctermfg=fg	ctermbg=NONE	cterm=NONE
-hi	Whitespace				ctermfg=7	ctermbg=NONE	cterm=NONE
+hi	Terminal				ctermfg=fg	ctermbg=254	cterm=none
+hi	Todo					ctermfg=01	ctermbg=none	cterm=underline
+hi	ToolbarButton				ctermfg=fg	ctermbg=none	cterm=none
+hi	ToolbarLine				ctermfg=none	ctermbg=none	cterm=none
+hi	Type					ctermfg=none	ctermbg=none	cterm=italic
+hi	Underlined				ctermfg=fg	ctermbg=none	cterm=none
+hi	VertSplit				ctermfg=251	ctermbg=none	cterm=none
+hi	VisualNOS				ctermfg=none	ctermbg=255	cterm=none
+hi	WarningMsg				ctermfg=94	ctermbg=229	cterm=none
+hi	WhichKeySeperator			ctermfg=fg	ctermbg=none	cterm=none
+hi	Whitespace				ctermfg=7	ctermbg=none	cterm=none
 
 " " These are Vim only
 if !has('nvim')
-	hi	Tooltip				ctermfg=fg	ctermbg=253	cterm=NONE
-	hi	Menu				ctermfg=fg	ctermbg=253	cterm=NONE
+	hi	Tooltip				ctermfg=fg	ctermbg=253	cterm=none
+	hi	Menu				ctermfg=fg	ctermbg=253	cterm=none
 endif
 
 
-hi	FoldColumn				ctermfg=8	ctermbg=NONE	cterm=NONE
-hi	Folded					ctermfg=8	ctermbg=NONE	cterm=NONE
+hi	FoldColumn				ctermfg=8	ctermbg=none	cterm=none
+hi	Folded					ctermfg=8	ctermbg=none	cterm=none
 
-hi	SignColumn				ctermfg=241	ctermbg=255	cterm=NONE
-hi	LineNr					ctermfg=7	ctermbg=NONE	cterm=NONE
+hi	SignColumn				ctermfg=241	ctermbg=255	cterm=none
+hi	LineNr					ctermfg=7	ctermbg=none	cterm=none
 
 hi!	link EndOfBuffer			NonText
 hi!	link QuickFixLine			Search
@@ -163,15 +163,15 @@ hi!	link vimHiCTermFgBg			Normal
 hi!	link vimHiGuiFgBg			Normal
 
 " -------------- Markdown -----------------------
-hi	mkdHeading				ctermfg=NONE	ctermbg=NONE	cterm=underline
-hi	mkdItalic				ctermfg=NONE	ctermbg=NONE	cterm=italic
-hi	markdownBold				ctermfg=NONE	ctermbg=NONE	cterm=bold
-hi	markdownUrl				ctermfg=NONE	ctermbg=NONE	cterm=underline
-hi	markdownHeadingDelimiter		ctermfg=NONE	ctermbg=NONE	cterm=NONE
-hi	mkdCode					ctermfg=241	ctermbg=NONE	cterm=NONE
-hi	mkdCodeDelimiter			ctermfg=241	ctermbg=NONE	cterm=NONE
+hi	mkdHeading				ctermfg=none	ctermbg=none	cterm=underline
+hi	mkdItalic				ctermfg=none	ctermbg=none	cterm=italic
+hi	markdownBold				ctermfg=none	ctermbg=none	cterm=bold
+hi	markdownUrl				ctermfg=none	ctermbg=none	cterm=underline
+hi	markdownHeadingDelimiter		ctermfg=none	ctermbg=none	cterm=none
+hi	mkdCode					ctermfg=241	ctermbg=none	cterm=none
+hi	mkdCodeDelimiter			ctermfg=241	ctermbg=none	cterm=none
 hi!	link markdownItalic			mkdItalic
-hi	markdownLinkText			ctermfg=241	ctermbg=NONE	cterm=NONE
+hi	markdownLinkText			ctermfg=241	ctermbg=none	cterm=none
 hi!	link markdownH1				mkdHeading
 hi!	link markdownH1Delimiter		markdownHeadingDelimiter
 hi!	link markdownH2				mkdHeading
@@ -185,17 +185,17 @@ hi!	link markdownLinkDelimiter		folded
 hi!	link markdownLinkTextDelimiter		folded
 
 " -------------- Dirvish ------------------------
-hi	DirvishPathTail				ctermfg=NONE	ctermbg=NONE	cterm=bold
+hi	DirvishPathTail				ctermfg=none	ctermbg=none	cterm=bold
 hi!	link DirvishArg				Search
 
 " -------------- Help ---------------------------
-hi	helpHyperTextJump			ctermfg=NONE	ctermbg=NONE	cterm=underline
-hi	helpHeadline				ctermfg=NONE	ctermbg=NONE	cterm=bold
+hi	helpHyperTextJump			ctermfg=none	ctermbg=none	cterm=underline
+hi	helpHeadline				ctermfg=none	ctermbg=none	cterm=bold
 hi!	link helpExample			Normal
 hi!	link helpCommand			Constant
 hi!	link helpBacktick			Constant
 
 " -------------- XML ----------------------------
 hi!	link xmlProcessingDelim			Normal
-hi	xmlTagName				ctermfg=NONE	ctermbg=NONE	cterm=NONE
+hi	xmlTagName				ctermfg=none	ctermbg=none	cterm=none
 f

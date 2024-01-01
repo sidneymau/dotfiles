@@ -11,15 +11,28 @@ endif
 
 let g:colors_name = 'smau'
 
-hi	Normal					ctermfg=15	ctermbg=NONE	cterm=none
+if &background == "dark"
+    hi	Normal					ctermfg=15	ctermbg=NONE	cterm=none
+    hi	Constant				ctermfg=7	ctermbg=NONE	cterm=italic
+    hi	CursorLineNr				ctermfg=fg	ctermbg=8	cterm=NONE
+    hi	MatchParen				ctermbg=8			cterm=None
+    hi	Comment					ctermfg=12	ctermbg=NONE	cterm=NONE  " 12
+    hi	Pmenu					ctermfg=NONE	ctermbg=8	cterm=NONE
+else
+    hi	Normal					ctermfg=0	ctermbg=NONE	cterm=none
+    hi	Constant				ctermfg=8	ctermbg=NONE	cterm=italic
+    hi	CursorLineNr				ctermfg=fg	ctermbg=7	cterm=NONE
+    hi	MatchParen				ctermbg=7			cterm=None
+    hi	Comment					ctermfg=4	ctermbg=NONE	cterm=NONE  " 12
+    hi	Pmenu					ctermfg=NONE	ctermbg=7	cterm=NONE
+endif
+
 hi	ColorColumn				ctermfg=02	ctermbg=NONE	cterm=NONE
 hi	Conceal					ctermfg=251	ctermbg=NONE	cterm=NONE
-hi	Constant				ctermfg=7	ctermbg=NONE	cterm=italic
 hi	CursorColumn				ctermfg=NONE	ctermbg=NONE	cterm=NONE
 hi	Cursor									cterm=reverse
 hi	CursorIM								cterm=reverse
 hi	CursorLine								cterm=NONE
-hi	CursorLineNr				ctermfg=fg	ctermbg=8	cterm=NONE
 hi	DiffAdd					ctermfg=70	ctermbg=193	cterm=NONE
 hi	DiffChange				ctermfg=94	ctermbg=229	cterm=NONE
 hi	DiffDelete				ctermfg=124	ctermbg=224	cterm=NONE
@@ -31,13 +44,11 @@ hi	Identifier				ctermfg=fg	ctermbg=NONE	cterm=NONE
 hi	Ignore					ctermfg=fg	ctermbg=NONE	cterm=NONE
 hi	IncSearch				ctermfg=189	ctermbg=62	cterm=NONE
 hi	InfoMsg					ctermfg=62	ctermbg=189	cterm=NONE
-hi	MatchParen				ctermbg=8			cterm=None
 hi	TabLine					ctermfg=fg	ctermbg=NONE	cterm=underline
 hi	TablineSel								cterm=reverse
 hi	ModeMsg					ctermfg=fg	ctermbg=NONE	cterm=NONE
 hi	MoreMsg					ctermfg=fg	ctermbg=NONE	cterm=NONE
 hi	NonText					ctermfg=NONE	ctermbg=NONE	cterm=NONE
-hi	Pmenu					ctermfg=NONE	ctermbg=7	cterm=NONE
 hi	PmenuThumb				ctermfg=NONE	ctermbg=fg	cterm=NONE
 hi	PreProc					ctermfg=fg	ctermbg=NONE	cterm=NONE
 hi	Question				ctermfg=fg	ctermbg=NONE	cterm=NONE
@@ -70,7 +81,6 @@ if !has('nvim')
 	hi	Menu				ctermfg=fg	ctermbg=253	cterm=NONE
 endif
 
-hi	Comment					ctermfg=12	ctermbg=NONE	cterm=NONE  " 12
 
 hi	FoldColumn				ctermfg=8	ctermbg=NONE	cterm=NONE
 hi	Folded					ctermfg=8	ctermbg=NONE	cterm=NONE
@@ -188,3 +198,4 @@ hi!	link helpBacktick			Constant
 " -------------- XML ----------------------------
 hi!	link xmlProcessingDelim			Normal
 hi	xmlTagName				ctermfg=NONE	ctermbg=NONE	cterm=NONE
+f

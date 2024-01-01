@@ -1,5 +1,4 @@
 " Colorscheme
-" set background=dark
 colorscheme smau
 
 " Hybrid line numbering

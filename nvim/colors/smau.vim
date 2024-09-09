@@ -1,9 +1,3 @@
-" Adapted from the yui colorscheme by smau (@sidneymau)
-
-if !has('gui_running') && &t_Co < 256 && !has('nvim')
-	finish
-endif
-
 hi clear
 if exists('syntax_on')
 	syntax reset
@@ -198,4 +192,3 @@ hi! link helpBacktick Constant
 " -------------- XML ----------------------------
 hi! link xmlProcessingDelim Normal
 hi xmlTagName ctermfg=none ctermbg=none cterm=none
-f

@@ -8,19 +8,23 @@ set relativenumber
 set cursorline
 
 " Folding
-set foldmethod=manual
+" set foldmethod=manual
 set nofoldenable
+set foldmethod=syntax
+autocmd FileType python setlocal foldmethod=indent " fold on indents for python
+set foldnestmax=2
+nnoremap <space> za
+vnoremap <space> zf
 
 " Tabs
-set tabstop=2
-set shiftwidth=2
-" set smarttab  " default on
-" set noexpandtab
-set expandtab " To insert a real tab when 'expandtab' is on, use CTRL-V<Tab>.
+set tabstop=4
+set noexpandtab " this will likely be overridden by per-filetype plugins
+set softtabstop=0
+set shiftwidth=0
 " autocmd FileType make setlocal noexpandtab " Expand tabulations in Makefiles
 
 " Indentation
-" set autoindent
+set autoindent
 set smartindent
 
 " Undo file
@@ -34,7 +38,7 @@ set backupdir=~/.local/share/nvim/backup
 set clipboard=unnamedplus
 
 " Recognize filetype and indent accordingly
-" filetype plugin indent on
+" filetype plugin indent on " enabled by default
 
 " Show hidden characters
 " set listchars=tab:>—,trail:-

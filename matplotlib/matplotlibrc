@@ -1,12 +1,35 @@
 font.family : monospace
+font.serif: Nimbus Roman
+font.sans-serif: Nimbus Sans
+font.cursive: Z003
+font.fantasy: Z003
+# font.monospace: Courier New
+# font.monospace: Courier 10 Pitch
+# font.monospace: Nimbus Mono
+# font.monospace: American Typewriter
+# font.monospace: Nimbus Mono PS
+font.monospace: Nimbus Mono
+# font.monospace: FreeMono
+# font.monospace: FreeMono, Nimbus Mono PS, TeX Gyre Cursor
 
-text.usetex: True
-text.latex.preamble: "\renewcommand*\familydefault{\ttdefault} \usepackage[noendash,LGRgreek]{mathastext} \MTfamily{\ttdefault} \MTgreekfont{\ttdefault} \Mathastext"
+mathtext.fontset: custom
+# mathtext.bf: sans:bold
+# mathtext.bfit: sans:italic:bold
+# mathtext.cal: cursive
+# mathtext.it: sans:italic
+# mathtext.rm: sans
+# mathtext.sf: sans
+# mathtext.tt: monospace
+mathtext.fallback: None
+mathtext.default: regular
+
+text.usetex: False
 
 axes.formatter.useoffset: False
-axes.prop_cycle: cycler(color=['black'])
+axes.formatter.use_mathtext: True
+# axes.prop_cycle: cycler(color=['black'])
 # axes.prop_cycle: cycler(color=['black']) * cycler(linestyle=['solid', 'dashed', 'dashdot', 'dotted'])
-axes.titlesize : 12  # 12 pts == 1 pica
+axes.titlesize : 12  # 12 pts == 1 pica (1/6 inch)
 axes.labelsize : 10  # 10 pts
 
 xtick.bottom: True
@@ -23,7 +46,7 @@ ytick.labelsize : 10
 
 lines.color: k
 lines.linestyle  : -
-lines.linewidth: 0.8
+lines.linewidth: 0.8  # same as frame width
 lines.markersize: 1
 
 patch.linewidth: 0.8

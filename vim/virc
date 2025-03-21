@@ -1,0 +1,30 @@
+" Hybrid line numbering
+set number
+set relativenumber
+set cursorline
+
+" Tabs
+set tabstop=4
+set noexpandtab
+set softtabstop=0
+set shiftwidth=0
+
+" Indentation
+set autoindent
+set smartindent
+
+" Undo file
+set undofile
+
+" Backup
+set backup
+
+" Use system-wide clipboard
+set clipboard=unnamedplus
+
+" Show hidden characters
+set listchars=tab:│\ ,trail:-
+set list
+
+" Disable mouse
+set mouse=

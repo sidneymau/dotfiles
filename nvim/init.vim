@@ -7,15 +7,6 @@ set number
 set relativenumber
 set cursorline
 
-" Folding
-" set foldmethod=manual
-set nofoldenable
-set foldmethod=syntax
-autocmd FileType python setlocal foldmethod=indent " fold on indents for python
-set foldnestmax=2
-nnoremap <space> za
-vnoremap <space> zf
-
 " Tabs
 set tabstop=4
 set noexpandtab " this will likely be overridden by per-filetype plugins

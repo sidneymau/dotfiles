@@ -3,14 +3,8 @@ font.serif: Nimbus Roman
 font.sans-serif: Nimbus Sans
 font.cursive: Z003
 font.fantasy: Z003
-# font.monospace: Courier New
-# font.monospace: Courier 10 Pitch
-# font.monospace: Nimbus Mono
-# font.monospace: American Typewriter
-# font.monospace: Nimbus Mono PS
 font.monospace: Nimbus Mono
-# font.monospace: FreeMono
-# font.monospace: FreeMono, Nimbus Mono PS, TeX Gyre Cursor
+
 
 mathtext.fontset: custom
 # mathtext.bf: sans:bold
@@ -29,7 +23,7 @@ axes.formatter.useoffset: False
 axes.formatter.use_mathtext: True
 # axes.prop_cycle: cycler(color=['black'])
 # axes.prop_cycle: cycler(color=['black']) * cycler(linestyle=['solid', 'dashed', 'dashdot', 'dotted'])
-axes.titlesize : 12  # 12 pts == 1 pica (1/6 inch)
+axes.titlesize : 10  # 12 pts == 1 pica (1/6 inch)
 axes.labelsize : 10  # 10 pts
 
 xtick.bottom: True
@@ -58,8 +52,8 @@ legend.framealpha: 1
 legend.edgecolor: 0
 legend.fancybox: False
 
-figure.titlesize : 12
-figure.labelsize : 12
+figure.titlesize : 10
+figure.labelsize : 10
 
 # image.aspect : equal
 image.cmap : binary

@@ -1,6 +1,5 @@
 " Colorscheme
 set notermguicolors
-colorscheme smau
 
 " Hybrid line numbering
 set number

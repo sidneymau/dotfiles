@@ -25,7 +25,8 @@ set backup
 set backupdir=~/.local/share/nvim/backup
 
 " Use system-wide clipboard
-set clipboard=unnamedplus
+" Disabled due to high CPU load with netrw...
+" set clipboard=unnamedplus
 
 " Nocompataible mode
 set nocompatible
@@ -43,11 +44,15 @@ set list
 set mouse=
 
 " Netrw config
-let g:netrw_liststyle = 3  " tree-style file browsing
+let g:netrw_liststyle=3  " tree-style file browsing
+let g:netrw_list_hide= '\(^\|\s\s\)\zs\.\S\+'  " hide dotfiles by default
+let g:netrw_banner=0
+" let g:netrw_browse_split=4  " seems unnecessary with Lexplore (instead of
+" Vexplore)
 
-" autocmd VimEnter * 25Lexplore  " enter vim with 25% split for Netrw pane on left
+" autocmd VimEnter * 10Lexplore  " enter vim with 10% split for Netrw pane on left
 " Augroup VimStartup:
 augroup VimStartup
   au!
-  au VimEnter * if expand("%") == "" | 25Lexplore | endif
+  au VimEnter * if expand("%") == "" | 10Lexplore | endif
 augroup END

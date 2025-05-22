@@ -30,6 +30,9 @@ set backupdir=~/.local/share/nvim/backup
 
 " Nocompataible mode
 set nocompatible
+"
+" Enable filetype plugin
+filetype plugin on
 
 " Recognize filetype and indent accordingly
 filetype plugin indent on " enabled by default

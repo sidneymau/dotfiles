@@ -26,7 +26,7 @@ set backupdir=~/.local/share/nvim/backup
 
 " Use system-wide clipboard
 " Disabled due to high CPU load with netrw...
-" set clipboard=unnamedplus
+set clipboard=unnamedplus
 
 " Nocompataible mode
 set nocompatible
@@ -51,10 +51,10 @@ let g:netrw_winsize=20
 " let g:netrw_winsize=90
 let g:netrw_liststyle=3  " tree-style file browsing
 let g:netrw_list_hide= '\(^\|\s\s\)\zs\.\S\+'  " hide dotfiles by default
-let g:netrw_banner=0
+" let g:netrw_banner=0
 " let g:netrw_browse_split=2
 
-augroup VimStartup
-  au!
-  au VimEnter * if expand("%") == "" | Lexplore | endif
-augroup END
+" augroup VimStartup
+"   au!
+"   au VimEnter * if expand("%") == "" | Lexplore | endif
+" augroup END

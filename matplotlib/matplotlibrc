@@ -54,6 +54,7 @@ legend.fancybox: False
 
 figure.titlesize : 10
 figure.labelsize : 10
+figure.figsize: 6, 4
 
 # image.aspect : equal
 image.cmap : binary

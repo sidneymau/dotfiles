@@ -1,5 +1,5 @@
-font.family : monospace
-font.serif: Nimbus Roman
+font.family : serif
+font.serif: C059
 font.sans-serif: Nimbus Sans
 font.cursive: Z003
 font.fantasy: Z003
@@ -46,6 +46,8 @@ lines.markersize: 1
 patch.linewidth: 0.8
 
 scatter.marker: .
+
+grid.linestyle: :
 
 legend.fontsize : 10
 legend.framealpha: 1

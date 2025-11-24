@@ -7,17 +7,19 @@ let g:colors_name = 'smau'
 
 if &background == "dark"
 	hi Normal ctermfg=15 ctermbg=none cterm=none
-	hi Constant ctermfg=7 ctermbg=none cterm=italic
+	hi Constant ctermfg=7 ctermbg=none cterm=none
 	hi CursorLineNr ctermfg=fg ctermbg=8 cterm=none
 	hi MatchParen ctermbg=8 cterm=none
-	hi Comment ctermfg=12 ctermbg=none cterm=none
+	hi Comment ctermfg=7 ctermbg=none cterm=none
+	hi SpecialComment ctermfg=12 ctermbg=none cterm=italic
 	hi Pmenu ctermfg=none ctermbg=8 cterm=none
 else
 	hi Normal ctermfg=0 ctermbg=none cterm=none
-	hi Constant ctermfg=8 ctermbg=none cterm=italic
+	hi Constant ctermfg=8 ctermbg=none cterm=none
 	hi CursorLineNr ctermfg=fg ctermbg=7 cterm=none
 	hi MatchParen ctermbg=7 cterm=none
-	hi Comment ctermfg=4 ctermbg=none cterm=none
+	hi Comment ctermfg=8 ctermbg=none cterm=none
+	hi SpecialComment ctermfg=4 ctermbg=none cterm=italic
 	hi Pmenu ctermfg=none ctermbg=7 cterm=none
 endif
 
@@ -50,7 +52,8 @@ hi Search ctermfg=62 ctermbg=189 cterm=none
 hi Visual ctermfg=19 ctermbg=147 cterm=none
 hi Special ctermfg=12 ctermbg=none cterm=italic
 hi SpecialKey ctermfg=249 ctermbg=none cterm=none
-hi SpellBad ctermfg=124 ctermbg=224 cterm=none
+" hi SpellBad ctermfg=124 ctermbg=224 cterm=none
+hi SpellBad ctermfg=none ctermbg=none cterm=undercurl
 hi SpellCap ctermfg=none ctermbg=none cterm=undercurl
 hi SpellLocal ctermfg=fg ctermbg=none cterm=none
 hi SpellRare ctermfg=none ctermbg=none cterm=none
@@ -58,7 +61,7 @@ hi Statement ctermfg=fg ctermbg=none cterm=italic
 hi StatusLine cterm=underline,reverse
 hi StatusLineNC cterm=underline
 hi Terminal ctermfg=fg ctermbg=254 cterm=none
-hi Todo ctermfg=01 ctermbg=none cterm=underline
+hi Todo ctermfg=124 ctermbg=224 cterm=none
 hi ToolbarButton ctermfg=fg ctermbg=none cterm=none
 hi ToolbarLine ctermfg=none ctermbg=none cterm=none
 hi Type ctermfg=none ctermbg=none cterm=italic
@@ -102,7 +105,7 @@ hi! link Operator Normal
 hi! link PreCondit PreProc
 hi! link Repeat Statement
 hi! link SpecialChar Special
-hi! link SpecialComment Special
+" hi! link SpecialComment Special
 hi! link StorageClass Type
 hi! link String Constant
 hi! link Structure Type

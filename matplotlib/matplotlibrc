@@ -3,7 +3,7 @@ font.serif: C059
 font.sans-serif: Nimbus Sans
 font.cursive: Z003
 font.fantasy: Z003
-font.monospace: Nimbus Mono
+font.monospace: Nimbus Mono PS
 
 
 mathtext.fontset: custom

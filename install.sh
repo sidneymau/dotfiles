@@ -11,7 +11,6 @@ dotfiles=(
 
 for dotfile in "${dotfiles[@]}"; do
 	if [[ -L $__config_setup/$dotfile ]]; then
-		# echo "skipping $dotfile"
 		target=$(readlink -fv $dotfile)
 		printf "'%s' is '%s'\n" "$__config_setup/$dotfile" "$target"
 	else

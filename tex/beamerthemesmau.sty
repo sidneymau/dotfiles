@@ -1,0 +1,75 @@
+\RequirePackage{appendixnumberbeamer}
+
+\RequirePackage{hyperref}
+
+% Hyperlink formatting
+\hypersetup{
+	colorlinks=true,
+	allcolors=.,
+	urlcolor=blue,
+}
+
+% Beamer settings
+% \usefonttheme{default}
+\usefonttheme{serif}
+\usefonttheme{professionalfonts}
+
+% \setbeamerfont{section title}{shape=\it}
+
+% \setbeamercovered{transparent} % transparent itemization
+% \setbeamertemplate{itemize subsubitem}[circle]
+\setbeamertemplate{itemize items}[circle]
+% \useinnertheme{circles}
+
+\beamertemplatenavigationsymbolsempty % no navigation symbols
+% \addtobeamertemplate{navigation symbols}{}{%
+% 	\usebeamerfont{footline}%
+% 	\usebeamercolor[fg]{footline}%
+% 	\hspace{1em}%
+% 	\insertframenumber/\inserttotalframenumber
+% }
+
+\setbeamertemplate{section page}{%
+  \begin{centering}
+    \begin{beamercolorbox}[center,sep=2cm]{part title}
+      \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+  \end{centering}
+}
+
+\setbeamertemplate{subsection page}{%
+  \begin{centering}
+    \begin{beamercolorbox}[center]{part title}
+      % \usebeamerfont{section title}\insertsection\par
+      \usebeamerfont{subsection title}\insertsubsection\par
+    \end{beamercolorbox}
+  \end{centering}
+}
+
+% \setbeamertemplate{headline}{%
+% 	\begin{beamercolorbox}{section in head/foot}
+% 		\vskip2pt\insertnavigation{\paperwidth}\vskip2pt
+% 	\end{beamercolorbox}
+% }
+
+\setbeamertemplate{footline}{%
+	\begin{beamercolorbox}{section in head/foot}
+		\usebeamerfont{footline}%
+		\usebeamercolor[fg]{footline}%
+		% \hspace{2pt} \href{https://sidneymau.com}{\insertshortauthor}\ \textbar\ \insertshortinstitute
+		% \hspace{2pt} \href{https://sidneymau.com}{\insertshortauthor}
+		\hspace{2pt} \insertshortauthor\ \textbar\ \insertshortinstitute\ \textbar\ \insertshorttitle
+		% \hspace{2pt} \insertshortinstitute
+		\hfill
+		% \insertsection
+		\insertframenumber/\inserttotalframenumber \hspace{2pt}
+		\vspace{2pt}
+	\end{beamercolorbox}
+}
+
+% \setbeamertemplate{frametitle}
+% {
+%     \insertsection:\ \insertframetitle
+% }
+
+\setbeamertemplate{bibliography item}{}

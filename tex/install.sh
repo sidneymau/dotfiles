@@ -4,14 +4,21 @@ __texmf_home=$(kpsewhich -var-value=TEXMFHOME)
 __latex="${__texmf_home}/tex/latex"
 mkdir -p -v ${__latex}
 
-for sty in *.sty; do
-	if [[ -L $__latex/$sty ]]; then
-		target=$(readlink -fv $sty)
-		printf "'%s' is '%s'\n" "$__latex/$sty" "$target"
+packages=(
+	beamerthemesmau
+	beamerthemeuchicago
+	beamerthemestanford
+	beamerthemeduke
+)
+
+for package in "${packages[@]}"; do
+	if [[ -L $__latex/$package ]]; then
+		target=$(readlink -fv $package)
+		printf "'%s' is '%s'\n" "$__latex/$package" "$target"
 	else
-		if [[ -d $__latex/$sty && ! -L $__latex/$sty ]]; then
-			rm -irv "$__latex/$sty"
+		if [[ -d $__latex/$package && ! -L $__latex/$package ]]; then
+			rm -irv "$__latex/$package"
 		fi
-		ln -sv "$PWD/$sty" "$__latex/$sty"
+		ln -sv "$PWD/$package" "$__latex/$package"
 	fi
 done

@@ -1,0 +1,23 @@
+% \setbeamercovered{transparent} % transparent itemization
+\setbeamertemplate{itemize items}{\textbullet}
+
+\setbeamertemplate{section page}
+{%
+  \begin{centering}
+    \begin{beamercolorbox}[center,sep=2cm]{part title}
+      \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+  \end{centering}
+}
+
+\setbeamertemplate{subsection page}
+{%
+  \begin{centering}
+    \begin{beamercolorbox}[center]{part title}
+      % \usebeamerfont{section title}\insertsection\par
+      \usebeamerfont{subsection title}\insertsubsection\par
+    \end{beamercolorbox}
+  \end{centering}
+}
+
+\setbeamertemplate{bibliography item}{}

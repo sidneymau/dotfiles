@@ -9,6 +9,9 @@ packages=(
 	beamerthemeuchicago
 	beamerthemestanford
 	beamerthemeduke
+	beamerthemedesc
+	beamerthemerubin
+	beamerthemeroman
 )
 
 for package in "${packages[@]}"; do

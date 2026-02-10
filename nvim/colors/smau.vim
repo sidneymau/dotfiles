@@ -65,7 +65,7 @@ hi Todo ctermfg=124 ctermbg=224 cterm=none
 hi ToolbarButton ctermfg=fg ctermbg=none cterm=none
 hi ToolbarLine ctermfg=none ctermbg=none cterm=none
 hi Type ctermfg=none ctermbg=none cterm=italic
-hi Underlined ctermfg=fg ctermbg=none cterm=none
+hi Underlined ctermfg=fg ctermbg=none cterm=underline
 hi VertSplit ctermfg=251 ctermbg=none cterm=none
 hi VisualNOS ctermfg=none ctermbg=255 cterm=none
 hi WarningMsg ctermfg=94 ctermbg=229 cterm=none
@@ -160,26 +160,30 @@ hi! link vimHiCTermFgBg Normal
 hi! link vimHiGuiFgBg Normal
 
 " -------------- Markdown -----------------------
-hi mkdHeading ctermfg=none ctermbg=none cterm=underline
-hi mkdItalic ctermfg=none ctermbg=none cterm=italic
+hi markdownHeading ctermfg=none ctermbg=none cterm=underline
+hi! link markdownH1 markdownHeading
+hi! link markdownH1Delimiter markdownHeadingDelimiter  " unnecessary?
+hi! link markdownH2 markdownHeading
+hi! link markdownH3 markdownHeading
+hi! link markdownH4 markdownHeading
+hi! link markdownRule Constant
+hi markdownItalic ctermfg=none ctermbg=none cterm=italic
 hi markdownBold ctermfg=none ctermbg=none cterm=bold
-hi markdownUrl ctermfg=none ctermbg=none cterm=underline
-hi markdownHeadingDelimiter ctermfg=none ctermbg=none cterm=none
-hi mkdCode ctermfg=241 ctermbg=none cterm=none
-hi mkdCodeDelimiter ctermfg=241 ctermbg=none cterm=none
-hi! link markdownItalic mkdItalic
-hi markdownLinkText ctermfg=241 ctermbg=none cterm=none
-hi! link markdownH1 mkdHeading
-hi! link markdownH1Delimiter markdownHeadingDelimiter
-hi! link markdownH2 mkdHeading
-hi! link markdownH3 mkdHeading
-hi! link markdownH4 mkdHeading
-hi! link markdownCodeDelimiter folded
-hi! link markdownBoldDelimiter folded
-hi! link markdownItalicDelimiter folded
-hi! link markdownBoldItalicDelimiter folded
-hi! link markdownLinkDelimiter folded
-hi! link markdownLinkTextDelimiter folded
+hi markdownBoldItalic ctermfg=none ctermbg=none cterm=bold,italic
+hi markdownCode ctermfg=none ctermbg=none cterm=italic
+hi! link markdownCodeBlock markdownCode
+hi! link markdownLink Underlined
+hi! link markdownUrl markdownLink
+hi! link markdownLinkText Underlined
+hi! link markdownHeadingDelimiter Constant
+hi! link markdownItalicDelimiter Constant
+hi! link markdownBoldDelimiter Constant
+hi! link markdownBoldItalicDelimiter Constant
+hi! link markdownBlockquote Constant
+hi! link markdownCodeDelimiter Constant
+hi! link markdownUrlDelimiter Constant
+hi! link markdownLinkDelimiter Constant
+hi! link markdownLinkTextDelimiter Constant
 
 " -------------- Dirvish ------------------------
 hi DirvishPathTail ctermfg=none ctermbg=none cterm=bold

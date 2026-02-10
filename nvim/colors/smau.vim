@@ -177,6 +177,12 @@ hi! link helpExample Normal
 hi! link helpCommand Constant
 hi! link helpBacktick Constant
 
+" -------------- YAML ---------------------------
+hi! link yamlDocumentStart Constant
+hi! link yamlBlockMappingDelimiter Constant
+hi! link yamlBlockCollectionItemStart Constant
+hi! link yamlFlowIndicator Constant
+
 " -------------- XML ----------------------------
 hi! link xmlProcessingDelim Normal
 hi xmlTagName ctermfg=none ctermbg=none cterm=none

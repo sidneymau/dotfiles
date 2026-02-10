@@ -60,6 +60,7 @@ set mouse=
 
 set spelllang=en
 set spell
+set spelloptions=camel
 
 " Include spaces in filename
 set isfname+=32

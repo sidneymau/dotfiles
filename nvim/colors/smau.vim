@@ -78,7 +78,6 @@ if !has('nvim')
 	hi Menu ctermfg=fg ctermbg=253 cterm=none
 endif
 
-
 hi FoldColumn ctermfg=8 ctermbg=none cterm=none
 hi Folded ctermfg=8 ctermbg=none cterm=none
 
@@ -134,20 +133,6 @@ hi! link LspDiagnosticsDefaultWarning WarningMsg
 hi! link LspDiagnosticsDefaultInformation DiffText
 hi! link LspDiagnosticsUnderlineError Error
 
-" -------------- gitigns ------------------------
-hi! link GitSignsAdd DiffAdd
-hi! link GitSignsAddNr DiffAdd
-hi! link GitSignsAddLn DiffAdd
-hi! link GitSignsChange DiffChange
-hi! link GitSignsChangeNr DiffChange
-hi! link GitSignsChangeLn DiffChange
-hi! link GitSignsDelete DiffDelete
-hi! link GitSignsDeleteNr DiffDelete
-hi! link GitSignsDeleteLn DiffDelete
-
-" -------------- indenline ----------------------
-hi! link IndentBlanklineChar VertSplit
-
 " -------------- Vim Script ---------------------
 " v-- Some of these are normally linked to Type, which is italicized, leading
 " to lots of italics in this file
@@ -184,10 +169,6 @@ hi! link markdownCodeDelimiter Constant
 hi! link markdownUrlDelimiter Constant
 hi! link markdownLinkDelimiter Constant
 hi! link markdownLinkTextDelimiter Constant
-
-" -------------- Dirvish ------------------------
-hi DirvishPathTail ctermfg=none ctermbg=none cterm=bold
-hi! link DirvishArg Search
 
 " -------------- Help ---------------------------
 hi helpHyperTextJump ctermfg=none ctermbg=none cterm=underline

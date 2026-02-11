@@ -7,3 +7,6 @@ syn match markdownError "\w\@<=\w\@="
 syn clear markdownCodeBlock
 syn region markdownCodeBlock matchgroup=markdownCodeDelimiter start="^\s*\z(`\{3,\}\).*$" end="^\s*\z1\ze\s*$" keepend
 syn region markdownCodeBlock matchgroup=markdownCodeDelimiter start="^\s*\z(\~\{3,\}\).*$" end="^\s*\z1\ze\s*$" keepend
+
+" Defer to pandoc syntax
+" runtime syntax/pandoc.vim

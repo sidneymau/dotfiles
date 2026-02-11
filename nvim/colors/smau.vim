@@ -10,7 +10,7 @@ if &background == "dark"
 	hi Constant ctermfg=7 ctermbg=none cterm=none
 	hi CursorLineNr ctermfg=fg ctermbg=8 cterm=none
 	hi MatchParen ctermbg=8 cterm=none
-	hi Comment ctermfg=7 ctermbg=none cterm=none
+	hi Comment ctermfg=7 ctermbg=none cterm=italic
 	hi SpecialComment ctermfg=12 ctermbg=none cterm=italic
 	hi Pmenu ctermfg=none ctermbg=8 cterm=none
 else
@@ -158,8 +158,8 @@ hi markdownBoldItalic ctermfg=none ctermbg=none cterm=bold,italic
 hi markdownCode ctermfg=none ctermbg=none cterm=italic
 hi! link markdownCodeBlock markdownCode
 hi! link markdownLink Underlined
-hi! link markdownUrl markdownLink
 hi! link markdownLinkText Underlined
+hi! link markdownUrl markdownLink
 hi! link markdownHeadingDelimiter Constant
 hi! link markdownItalicDelimiter Constant
 hi! link markdownBoldDelimiter Constant
@@ -169,6 +169,22 @@ hi! link markdownCodeDelimiter Constant
 hi! link markdownUrlDelimiter Constant
 hi! link markdownLinkDelimiter Constant
 hi! link markdownLinkTextDelimiter Constant
+hi! link markdownListMarker Constant
+hi! link markdownOrderedListMarker Constant
+
+" -------------- Pandoc -------------------------
+hi! link pandocTitleBlock SpecialComment  " this doesn't work?
+hi! link pandocTitleBlockTitle pandocTitleBlock
+hi! link pandocTitleBlockMark Constant
+hi! link pandocSetexHeader Normal
+hi pandocAtxHeader cterm=underline
+hi! link pandocAtxHeaderMark Constant
+hi! link pandocAtxStart Constant
+hi! link pandocUListItemBullet Constant
+hi! link pandocListItemBullet Constant
+hi! link pandocListItemBulletId Constant
+hi! link pandocReferenceUrl Underlined
+hi! link pandocImageIcon Comment
 
 " -------------- Help ---------------------------
 hi helpHyperTextJump ctermfg=none ctermbg=none cterm=underline

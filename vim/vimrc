@@ -1,1 +1,36 @@
-virc
+colorscheme smau
+set nocompatible
+
+" Hybrid line numbering
+set number
+set relativenumber
+set cursorline
+
+" Tabs
+set tabstop=8
+
+" Indentation
+set autoindent
+set smartindent
+
+" Backup
+set undofile
+set backup
+
+" Backup
+" set undofile                            " write undofile
+" set backup                              " write backup
+" set undodir=~/.vim/.undo//              " set undo directory
+" set backupdir=~/.vim/.backup//          " set backup directory
+" set directory=~/.vim/.swp//             " Set swap directory
+
+" Show hidden characters
+set listchars=tab:│\ ,trail:-
+set list
+
+" Disable mouse
+set mouse=
+
+set spelllang=en
+set spell
+set spelloptions=camel

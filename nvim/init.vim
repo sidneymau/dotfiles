@@ -7,6 +7,10 @@ set number
 set relativenumber
 set cursorline
 
+set textwidth=72
+set colorcolumn=+1
+" set colorcolumn=81,121
+
 " Tabs
 set tabstop=8
 

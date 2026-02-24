@@ -23,7 +23,7 @@ else
 	hi Pmenu ctermfg=none ctermbg=7 cterm=none
 endif
 
-hi ColorColumn ctermfg=02 ctermbg=none cterm=none
+hi! link ColorColumn MatchParen
 hi Conceal ctermfg=251 ctermbg=none cterm=none
 hi CursorColumn ctermfg=none ctermbg=none cterm=none
 hi Cursor cterm=reverse
@@ -198,6 +198,7 @@ hi! link yamlDocumentStart Constant
 hi! link yamlBlockMappingDelimiter Constant
 hi! link yamlBlockCollectionItemStart Constant
 hi! link yamlFlowIndicator Constant
+hi! link yamlBlockScalarHeader Constant
 
 " -------------- XML ----------------------------
 hi! link xmlProcessingDelim Normal

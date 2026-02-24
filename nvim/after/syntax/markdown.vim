@@ -10,3 +10,6 @@ syn region markdownCodeBlock matchgroup=markdownCodeDelimiter start="^\s*\z(\~\{
 
 " Defer to pandoc syntax
 " runtime syntax/pandoc.vim
+
+" https://vi.stackexchange.com/a/38111
+syn match markdownBlockquote "^> .*"

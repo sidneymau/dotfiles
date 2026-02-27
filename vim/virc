@@ -1,9 +1,11 @@
+" This configures vim-minimal, not vi proper
+
 set nocompatible
 
 " Hybrid line numbering
-set number
-set relativenumber
-set cursorline
+" set number
+" set relativenumber
+" set cursorline
 
 " Tabs
 set tabstop=8
@@ -17,11 +19,11 @@ set undofile
 set backup
 
 " Backup
-" set undofile                            " write undofile
-" set backup                              " write backup
-" set undodir=~/.vim/.undo//              " set undo directory
-" set backupdir=~/.vim/.backup//          " set backup directory
-" set directory=~/.vim/.swp//             " Set swap directory
+" set undofile
+" set backup
+" set undodir=~/.vim/.undo//
+" set backupdir=~/.vim/.backup//
+" set directory=~/.vim/.swp//
 
 " Show hidden characters
 set listchars=tab:│\ ,trail:-

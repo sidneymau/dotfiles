@@ -1,3 +1,4 @@
+" vim: ft=vim
 " This configures vim-minimal, not vi proper
 
 set nocompatible

@@ -1,6 +1,7 @@
 " vim: ft=vim
 " This configures vim-minimal, not vi proper
 
+colorscheme smau-minimal
 set nocompatible
 
 " Hybrid line numbering

@@ -1,0 +1,202 @@
+" modified colorscheme file for vim-minimal
+
+hi clear
+
+if &background == "dark"
+	hi Normal ctermfg=15 ctermbg=none cterm=none
+	hi Constant ctermfg=7 ctermbg=none cterm=none
+	hi CursorLineNr ctermfg=none ctermbg=8 cterm=none
+	hi MatchParen ctermbg=8 cterm=none
+	hi Comment ctermfg=7 ctermbg=none cterm=italic
+	hi SpecialComment ctermfg=12 ctermbg=none cterm=italic
+	hi Pmenu ctermfg=none ctermbg=8 cterm=none
+else
+	hi Normal ctermfg=0 ctermbg=none cterm=none
+	hi Constant ctermfg=8 ctermbg=none cterm=none
+	hi CursorLineNr ctermfg=none ctermbg=7 cterm=none
+	hi MatchParen ctermbg=7 cterm=none
+	hi Comment ctermfg=8 ctermbg=none cterm=none
+	hi SpecialComment ctermfg=4 ctermbg=none cterm=italic
+	hi Pmenu ctermfg=none ctermbg=7 cterm=none
+endif
+
+hi! link ColorColumn MatchParen
+hi Conceal ctermfg=251 ctermbg=none cterm=none
+hi CursorColumn ctermfg=none ctermbg=none cterm=none
+hi Cursor cterm=reverse
+hi CursorIM cterm=reverse
+hi CursorLine cterm=none
+hi DiffAdd ctermfg=70 ctermbg=193 cterm=none
+hi DiffChange ctermfg=94 ctermbg=229 cterm=none
+hi DiffDelete ctermfg=124 ctermbg=224 cterm=none
+hi DiffText ctermfg=25 ctermbg=195 cterm=none
+hi Directory ctermfg=none ctermbg=none cterm=none
+hi Error ctermfg=124 ctermbg=224 cterm=none
+hi ErrorMsg ctermfg=124 ctermbg=224 cterm=none
+hi Identifier ctermfg=none ctermbg=none cterm=none
+hi Ignore ctermfg=none ctermbg=none cterm=none
+hi IncSearch ctermfg=189 ctermbg=62 cterm=none
+hi InfoMsg ctermfg=62 ctermbg=189 cterm=none
+hi TabLine ctermfg=none ctermbg=none cterm=underline
+hi TablineSel cterm=reverse
+hi ModeMsg ctermfg=none ctermbg=none cterm=none
+hi MoreMsg ctermfg=none ctermbg=none cterm=none
+hi NonText ctermfg=none ctermbg=none cterm=none
+hi PmenuThumb ctermfg=none ctermbg=none cterm=none
+hi PreProc ctermfg=none ctermbg=none cterm=none
+hi Question ctermfg=none ctermbg=none cterm=none
+hi Search ctermfg=62 ctermbg=189 cterm=none
+hi Visual ctermfg=19 ctermbg=147 cterm=none
+hi Special ctermfg=12 ctermbg=none cterm=italic
+hi SpecialKey ctermfg=249 ctermbg=none cterm=none
+" hi SpellBad ctermfg=124 ctermbg=224 cterm=none
+hi SpellBad ctermfg=none ctermbg=none cterm=undercurl
+hi SpellCap ctermfg=none ctermbg=none cterm=undercurl
+hi SpellLocal ctermfg=none ctermbg=none cterm=none
+hi SpellRare ctermfg=none ctermbg=none cterm=none
+hi Statement ctermfg=none ctermbg=none cterm=italic
+hi StatusLine cterm=underline,reverse
+hi StatusLineNC cterm=underline
+hi Terminal ctermfg=none ctermbg=254 cterm=none
+hi Todo ctermfg=124 ctermbg=224 cterm=none
+hi ToolbarButton ctermfg=none ctermbg=none cterm=none
+hi ToolbarLine ctermfg=none ctermbg=none cterm=none
+hi Type ctermfg=none ctermbg=none cterm=italic
+hi Underlined ctermfg=none ctermbg=none cterm=underline
+hi VertSplit ctermfg=251 ctermbg=none cterm=none
+hi VisualNOS ctermfg=none ctermbg=255 cterm=none
+hi WarningMsg ctermfg=94 ctermbg=229 cterm=none
+hi WhichKeySeperator ctermfg=none ctermbg=none cterm=none
+hi Whitespace ctermfg=7 ctermbg=none cterm=none
+
+" " These are Vim only
+if !has('nvim')
+	hi Tooltip ctermfg=none ctermbg=253 cterm=none
+	hi Menu ctermfg=none ctermbg=253 cterm=none
+endif
+
+hi FoldColumn ctermfg=8 ctermbg=none cterm=none
+hi Folded ctermfg=8 ctermbg=none cterm=none
+
+hi SignColumn ctermfg=241 ctermbg=255 cterm=none
+hi LineNr ctermfg=7 ctermbg=none cterm=none
+
+hi! link EndOfBuffer NonText
+hi! link QuickFixLine Search
+hi! link Boolean Constant
+hi! link Character Constant
+hi! link Conditional Statement
+hi! link Define PreProc
+hi! link Debug Special
+hi! link Delimiter Constant
+hi! link Exception Normal
+hi! link Float Number
+hi! link Function Identifier
+hi! link Include PreProc
+hi! link Keyword Normal
+hi! link Label Normal
+hi! link Macro PreProc
+hi! link Number Constant
+hi! link Operator Normal
+hi! link PreCondit PreProc
+hi! link Repeat Statement
+hi! link SpecialChar Special
+" hi! link SpecialComment Special
+hi! link StorageClass Type
+hi! link String Constant
+hi! link Structure Type
+hi! link Tag Special
+hi! link Typedef Type
+hi! link diffAdded DiffAdd
+hi! link diffChanged DiffChange
+hi! link diffRemoved DiffDelete
+hi! link diffComment Comment
+hi! link PmenuSel WildMenu
+hi! link StatusLineTerm StatusLine
+hi! link StatusLineTermNC StatusLineNC
+hi! link TabLineFill TabLine
+hi! link lCursor Cursor
+hi! link jsParensError Normal
+hi! link WhichKeyFloating Pmenu
+hi! link PmenuSbar Pmenu
+hi! link Substitute IncSearch
+hi! link WildMenu Visual
+hi! link Title Normal
+
+" -------------- LSP ----------------------------
+hi! link LspDiagnosticsDefaultError Error
+hi! link LspDiagnosticsDefaultHint LspDiagnosticsDefaultInformation
+hi! link LspDiagnosticsDefaultWarning WarningMsg
+hi! link LspDiagnosticsDefaultInformation DiffText
+hi! link LspDiagnosticsUnderlineError Error
+
+" -------------- Vim Script ---------------------
+" v-- Some of these are normally linked to Type, which is italicized, leading
+" to lots of italics in this file
+hi! link vimGroup Normal
+hi! link vimHiGui Normal
+hi! link vimHiKeyList Normal
+hi! link vimHiGroup Normal
+hi! link vimHiCTerm Normal
+hi! link vimHiCTermFgBg Normal
+hi! link vimHiGuiFgBg Normal
+
+" -------------- Markdown -----------------------
+hi markdownHeading ctermfg=none ctermbg=none cterm=underline
+hi! link markdownH1 markdownHeading
+hi! link markdownH1Delimiter markdownHeadingDelimiter  " unnecessary?
+hi! link markdownH2 markdownHeading
+hi! link markdownH3 markdownHeading
+hi! link markdownH4 markdownHeading
+hi! link markdownRule Constant
+hi markdownItalic ctermfg=none ctermbg=none cterm=italic
+hi markdownBold ctermfg=none ctermbg=none cterm=bold
+hi markdownBoldItalic ctermfg=none ctermbg=none cterm=bold,italic
+hi markdownCode ctermfg=none ctermbg=none cterm=italic
+hi! link markdownCodeBlock markdownCode
+hi! link markdownLink Underlined
+hi! link markdownLinkText Underlined
+hi! link markdownUrl markdownLink
+hi! link markdownHeadingDelimiter Constant
+hi! link markdownItalicDelimiter Constant
+hi! link markdownBoldDelimiter Constant
+hi! link markdownBoldItalicDelimiter Constant
+hi! link markdownBlockquote Constant
+hi! link markdownCodeDelimiter Constant
+hi! link markdownUrlDelimiter Constant
+hi! link markdownLinkDelimiter Constant
+hi! link markdownLinkTextDelimiter Constant
+hi! link markdownListMarker Constant
+hi! link markdownOrderedListMarker Constant
+
+" -------------- Pandoc -------------------------
+hi! link pandocTitleBlock SpecialComment  " this doesn't work?
+hi! link pandocTitleBlockTitle pandocTitleBlock
+hi! link pandocTitleBlockMark Constant
+hi! link pandocSetexHeader Normal
+hi pandocAtxHeader cterm=underline
+hi! link pandocAtxHeaderMark Constant
+hi! link pandocAtxStart Constant
+hi! link pandocUListItemBullet Constant
+hi! link pandocListItemBullet Constant
+hi! link pandocListItemBulletId Constant
+hi! link pandocReferenceUrl Underlined
+hi! link pandocImageIcon Comment
+
+" -------------- Help ---------------------------
+hi helpHyperTextJump ctermfg=none ctermbg=none cterm=underline
+hi helpHeadline ctermfg=none ctermbg=none cterm=bold
+hi! link helpExample Normal
+hi! link helpCommand Constant
+hi! link helpBacktick Constant
+
+" -------------- YAML ---------------------------
+hi! link yamlDocumentStart Constant
+hi! link yamlBlockMappingDelimiter Constant
+hi! link yamlBlockCollectionItemStart Constant
+hi! link yamlFlowIndicator Constant
+hi! link yamlBlockScalarHeader Constant
+
+" -------------- XML ----------------------------
+hi! link xmlProcessingDelim Normal
+hi xmlTagName ctermfg=none ctermbg=none cterm=none

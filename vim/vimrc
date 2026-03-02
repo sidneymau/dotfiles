@@ -20,6 +20,8 @@ set undodir=~/.config/vim/.undo//
 set backupdir=~/.config/vim/.backup//
 set directory=~/.config/vim/.swp//
 
+set viminfo+=n~/.config/vim/viminfo
+
 " Show hidden characters
 set listchars=tab:│\ ,trail:-
 set list

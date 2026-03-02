@@ -20,3 +20,14 @@ for dotfile in "${dotfiles[@]}"; do
 		ln -sv "$PWD/$dotfile" "$__config_setup/$dotfile"
 	fi
 done
+
+# sometimes vim doesn't use XDG_CONFIG_HOME...
+if [[ -L $HOME/.vim ]]; then
+	target=$(readlink -fv $HOME/.vim)
+	printf "'%s' is '%s'\n" "$HOME/.vim" "$target"
+else
+	if [[ -d "$HOME/.vim" && ! -L "$HOME/.vim" ]]; then
+		rm -irv "$HOME/.vim"
+	fi
+	ln -sv "$PWD/vim" "$HOME/.vim"
+fi

@@ -19,9 +19,9 @@ set smartindent
 " Backup
 set undofile
 set backup
-set undodir=~/.vim/.undo//
-set backupdir=~/.vim/.backup//
-set directory=~/.vim/.swp//
+set undodir=~/.config/vim/.undo//
+set backupdir=~/.config/vim/.backup//
+set directory=~/.config/vim/.swp//
 
 " Show hidden characters
 set listchars=tab:│\ ,trail:-

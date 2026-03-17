@@ -26,11 +26,11 @@ set backup
 set backupdir=~/.local/share/nvim/backup
 
 " Use system-wide clipboard
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
+" instead, use "* and "+ registers
+" "+ to yank and paste elsewhere
+" "* to paste from elsewhere
 
-" Nocompataible mode
-set nocompatible
-"
 " Enable filetype plugin
 filetype plugin on
 
@@ -47,20 +47,22 @@ set list
 set mouse=
 " set mousemodel=popup
 
-" " Netrw config
-" " let g:netrw_winsize=20
-" " let g:netrw_wiw=80
-" let g:netrw_winsize=-80
+" Netrw config
+let g:netrw_winsize=-20  " 20 cols is nominal min
+let g:netrw_preview=1  " vertical splitting
+let g:netrw_liststyle=0  " thin browsing
 " let g:netrw_liststyle=3  " tree-style file browsing
-" " let g:netrw_list_hide= '\(^\|\s\s\)\zs\.\S\+'  " hide dotfiles by default
-" " let g:netrw_banner=0
-" let g:netrw_browse_split=2
+let g:netrw_browse_split=4
+" These tank performance with unnamedplus clipboard, don't use
+" (<https://github.com/neovim/neovim/issues/23650#event-23261972027>)
+" let g:netrw_list_hide= '\(^\|\s\s\)\zs\.\S\+'  " hide dotfiles by default
+" let g:netrw_banner=0
 
-" If `nvim` invoked with not file, start netrw
-" augroup VimStartup
-"   au!
-"   au VimEnter * if expand("%") == "" | Explore | endif
-" augroup END
+" If `nvim` invoked with no argument, start in netrw
+augroup VimStartup
+  autocmd!
+  autocmd VimEnter * if expand("%") == "" | Vexplore | endif
+augroup END
 
 set spelllang=en
 set spell
@@ -68,3 +70,4 @@ set spelloptions=camel
 
 " Include spaces in filename
 set isfname+=32
+

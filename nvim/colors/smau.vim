@@ -203,3 +203,6 @@ hi! link yamlBlockScalarHeader Constant
 " -------------- XML ----------------------------
 hi! link xmlProcessingDelim Normal
 hi xmlTagName ctermfg=none ctermbg=none cterm=none
+
+" netrw
+hi! link netrwTreeBar Constant

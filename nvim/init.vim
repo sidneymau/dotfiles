@@ -47,6 +47,13 @@ set list
 set mouse=
 " set mousemodel=popup
 
+set spelllang=en
+set spell
+set spelloptions=camel
+
+" Include spaces in filename
+set isfname+=32
+
 " Netrw config
 let g:netrw_winsize=-20  " 20 cols is nominal min
 let g:netrw_preview=1  " vertical splitting
@@ -63,11 +70,4 @@ augroup VimStartup
   autocmd!
   autocmd VimEnter * if expand("%") == "" | Vexplore | endif
 augroup END
-
-set spelllang=en
-set spell
-set spelloptions=camel
-
-" Include spaces in filename
-set isfname+=32
 

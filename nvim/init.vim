@@ -59,7 +59,7 @@ let g:netrw_winsize=-20  " 20 cols is nominal min
 let g:netrw_preview=1  " vertical splitting
 let g:netrw_liststyle=0  " thin browsing
 " let g:netrw_liststyle=3  " tree-style file browsing
-let g:netrw_browse_split=4
+let g:netrw_browse_split=0
 " These tank performance with unnamedplus clipboard, don't use
 " (<https://github.com/neovim/neovim/issues/23650#event-23261972027>)
 " let g:netrw_list_hide= '\(^\|\s\s\)\zs\.\S\+'  " hide dotfiles by default

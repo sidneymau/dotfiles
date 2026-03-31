@@ -66,8 +66,7 @@ let g:netrw_browse_split=4
 " let g:netrw_banner=0
 
 " If `nvim` invoked with no argument, start in netrw
-augroup VimStartup
-  autocmd!
-  autocmd VimEnter * if expand("%") == "" | Vexplore | endif
-augroup END
-
+" augroup VimStartup
+"   autocmd!
+"   autocmd VimEnter * if expand("%") == "" | Vexplore | endif
+" augroup END

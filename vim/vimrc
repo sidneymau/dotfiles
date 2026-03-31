@@ -22,6 +22,12 @@ set directory=~/.config/vim/.swp//
 
 set viminfo+=n~/.config/vim/viminfo
 
+" Use system-wide clipboard
+set clipboard+=unnamedplus
+" instead, use "* and "+ registers
+" "+ to yank and paste elsewhere
+" "* to paste from elsewhere
+
 " Show hidden characters
 set listchars=tab:│\ ,trail:-
 set list
@@ -45,7 +51,7 @@ let g:netrw_browse_split=4
 " let g:netrw_banner=0
 
 " If `nvim` invoked with no argument, start in netrw
-augroup VimStartup
-  autocmd!
-  autocmd VimEnter * if expand("%") == "" | Vexplore | endif
-augroup END
+" augroup VimStartup
+"   autocmd!
+"   autocmd VimEnter * if expand("%") == "" | Vexplore | endif
+" augroup END

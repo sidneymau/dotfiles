@@ -1,13 +1,17 @@
 colorscheme smau
-set nocompatible
+
+" set showtabline=2
+set laststatus=2
 
 " Hybrid line numbering
 set number
 set relativenumber
 set cursorline
 
+" set textwidth=72
+
 " Tabs
-set tabstop=8
+" set tabstop=8
 
 " Indentation
 set autoindent
@@ -55,3 +59,5 @@ set spelloptions=camel
 "   autocmd!
 "   autocmd VimEnter * if expand("%") == "" | Vexplore | endif
 " augroup END
+
+" set diffopt=algorithm:minimal,filler,context:999999

@@ -1,6 +1,8 @@
 " Colorscheme
-set notermguicolors
-colorscheme smau
+colorscheme smau-gui
+
+" set showtabline=2
+set laststatus=2
 
 " Hybrid line numbering
 set number
@@ -10,13 +12,19 @@ set cursorline
 " set textwidth=72
 " set colorcolumn=+1
 " set colorcolumn=81,121
+" set nowrap
+
+" set foldlevelstart=99
+" set foldmethod=syntax
+" set foldcolumn=1
+" " set foldcolumn=auto:9
 
 " Tabs
-set tabstop=8
+" set tabstop=8
 
 " Indentation
 set autoindent
-set smartindent
+" set smartindent
 
 " Undo file
 set undofile
@@ -46,6 +54,9 @@ set list
 " Disable mouse
 set mouse=
 " set mousemodel=popup
+
+set ignorecase
+set smartcase
 
 set spelllang=en
 set spell

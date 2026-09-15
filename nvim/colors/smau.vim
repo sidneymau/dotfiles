@@ -6,83 +6,91 @@ endif
 let g:colors_name = 'smau'
 
 if &background == "dark"
-	hi Normal ctermfg=15 ctermbg=none cterm=none
-	hi Constant ctermfg=7 ctermbg=none cterm=none
-	hi CursorLineNr ctermfg=fg ctermbg=8 cterm=none
-	hi MatchParen ctermbg=8 cterm=none
-	hi Comment ctermfg=7 ctermbg=none cterm=italic
-	hi SpecialComment ctermfg=12 ctermbg=none cterm=italic
-	hi Pmenu ctermfg=none ctermbg=8 cterm=none
+	hi Normal ctermfg=15 ctermbg=NONE cterm=NONE
+	hi Constant ctermfg=7 ctermbg=NONE cterm=NONE
+	" hi CursorLineNr ctermfg=fg ctermbg=8 cterm=NONE
+	hi MatchParen ctermbg=8 cterm=NONE
+	hi Todo ctermfg=fg ctermbg=1 cterm=bold
+	hi Comment ctermfg=8 ctermbg=NONE
+	hi SpecialComment ctermfg=12 ctermbg=NONE cterm=italic
+	hi Pmenu ctermfg=NONE ctermbg=8 cterm=NONE
+	hi Search ctermfg=NONE ctermbg=3 cterm=NONE
+	hi CurSearch ctermfg=NONE ctermbg=3 cterm=bold
+	hi Visual ctermfg=NONE ctermbg=4 cterm=NONE
 else
-	hi Normal ctermfg=0 ctermbg=none cterm=none
-	hi Constant ctermfg=8 ctermbg=none cterm=none
-	hi CursorLineNr ctermfg=fg ctermbg=7 cterm=none
-	hi MatchParen ctermbg=7 cterm=none
-	hi Comment ctermfg=8 ctermbg=none cterm=none
-	hi SpecialComment ctermfg=4 ctermbg=none cterm=italic
-	hi Pmenu ctermfg=none ctermbg=7 cterm=none
+	hi Normal ctermfg=0 ctermbg=NONE cterm=NONE
+	hi Constant ctermfg=8 ctermbg=NONE cterm=NONE
+	" hi CursorLineNr ctermfg=fg ctermbg=7 cterm=NONE " TODO
+	hi MatchParen ctermbg=15 cterm=NONE
+	hi Todo ctermfg=fg ctermbg=9 cterm=bold
+	hi Comment ctermfg=7 ctermbg=NONE cterm=NONE
+	hi SpecialComment ctermfg=4 ctermbg=NONE cterm=italic
+	hi Pmenu ctermfg=NONE ctermbg=15 cterm=NONE
+	hi Search ctermfg=NONE ctermbg=11 cterm=NONE
+	hi CurSearch ctermfg=NONE ctermbg=11 cterm=bold
+	hi Visual ctermfg=NONE ctermbg=12 cterm=NONE
 endif
 
-hi! link ColorColumn MatchParen
-hi Conceal ctermfg=251 ctermbg=none cterm=none
-hi CursorColumn ctermfg=none ctermbg=none cterm=none
-hi Cursor cterm=reverse
-hi CursorIM cterm=reverse
-hi CursorLine cterm=none
-hi DiffAdd ctermfg=70 ctermbg=193 cterm=none
-hi DiffChange ctermfg=94 ctermbg=229 cterm=none
-hi DiffDelete ctermfg=124 ctermbg=224 cterm=none
-hi DiffText ctermfg=25 ctermbg=195 cterm=none
-hi Directory ctermfg=fg ctermbg=none cterm=none
-hi Error ctermfg=124 ctermbg=224 cterm=none
-hi ErrorMsg ctermfg=124 ctermbg=224 cterm=none
-hi Identifier ctermfg=fg ctermbg=none cterm=none
-hi Ignore ctermfg=fg ctermbg=none cterm=none
-hi IncSearch ctermfg=189 ctermbg=62 cterm=none
-hi InfoMsg ctermfg=62 ctermbg=189 cterm=none
-hi TabLine ctermfg=fg ctermbg=none cterm=underline
-hi TablineSel cterm=reverse
-hi ModeMsg ctermfg=fg ctermbg=none cterm=none
-hi MoreMsg ctermfg=fg ctermbg=none cterm=none
-hi NonText ctermfg=none ctermbg=none cterm=none
-hi PmenuThumb ctermfg=none ctermbg=fg cterm=none
-hi PreProc ctermfg=fg ctermbg=none cterm=none
-hi Question ctermfg=fg ctermbg=none cterm=none
-hi Search ctermfg=62 ctermbg=189 cterm=none
-hi Visual ctermfg=19 ctermbg=147 cterm=none
-hi Special ctermfg=12 ctermbg=none cterm=italic
-hi SpecialKey ctermfg=249 ctermbg=none cterm=none
-" hi SpellBad ctermfg=124 ctermbg=224 cterm=none
-hi SpellBad ctermfg=none ctermbg=none cterm=undercurl
-hi SpellCap ctermfg=none ctermbg=none cterm=undercurl
-hi SpellLocal ctermfg=fg ctermbg=none cterm=none
-hi SpellRare ctermfg=none ctermbg=none cterm=none
-hi Statement ctermfg=fg ctermbg=none cterm=italic
-hi StatusLine cterm=underline,reverse
+hi LineNr ctermfg=fg cterm=NONE
+hi CursorLineNr ctermfg=fg cterm=bold
+
+hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
+hi CursorLine cterm=underline
+
+" hi StatusLine ctermfg=fg ctermbg=NONE cterm=underline,reverse
+" hi StatusLineNC ctermfg=fg ctermbg=NONE cterm=underline
+hi StatusLine cterm=bold,underline
 hi StatusLineNC cterm=underline
-hi Terminal ctermfg=fg ctermbg=254 cterm=none
-hi Todo ctermfg=124 ctermbg=224 cterm=none
-hi ToolbarButton ctermfg=fg ctermbg=none cterm=none
-hi ToolbarLine ctermfg=none ctermbg=none cterm=none
-hi Type ctermfg=none ctermbg=none cterm=italic
-hi Underlined ctermfg=fg ctermbg=none cterm=underline
-hi VertSplit ctermfg=251 ctermbg=none cterm=none
-hi VisualNOS ctermfg=none ctermbg=255 cterm=none
-hi WarningMsg ctermfg=94 ctermbg=229 cterm=none
-hi WhichKeySeperator ctermfg=fg ctermbg=none cterm=none
-hi Whitespace ctermfg=7 ctermbg=none cterm=none
+
+hi! link ColorColumn MatchParen
+hi Conceal ctermfg=251 ctermbg=NONE cterm=NONE
+hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
+hi DiffAdd ctermfg=70 ctermbg=193 cterm=NONE
+hi DiffChange ctermfg=94 ctermbg=229 cterm=NONE
+hi DiffDelete ctermfg=124 ctermbg=224 cterm=NONE
+hi DiffText ctermfg=25 ctermbg=195 cterm=NONE
+hi Directory ctermfg=fg ctermbg=NONE cterm=NONE
+hi Error ctermfg=124 ctermbg=224 cterm=NONE
+hi ErrorMsg ctermfg=124 ctermbg=224 cterm=NONE
+hi Identifier ctermfg=fg ctermbg=NONE cterm=NONE
+hi Ignore ctermfg=fg ctermbg=NONE cterm=NONE
+hi InfoMsg ctermfg=62 ctermbg=189 cterm=NONE
+hi TabLine ctermfg=NONE ctermbg=NONE cterm=underline
+hi TablineSel ctermfg=NONE ctermbg=NONE cterm=bold
+hi ModeMsg ctermfg=fg ctermbg=NONE cterm=NONE
+hi MoreMsg ctermfg=fg ctermbg=NONE cterm=NONE
+hi NonText ctermfg=NONE ctermbg=NONE cterm=NONE
+hi PmenuThumb ctermfg=NONE ctermbg=fg cterm=NONE
+hi PreProc ctermfg=fg ctermbg=NONE cterm=NONE
+hi Question ctermfg=fg ctermbg=NONE cterm=NONE
+hi Special ctermfg=12 ctermbg=NONE cterm=italic
+hi SpecialKey ctermfg=249 ctermbg=NONE cterm=NONE
+" hi SpellBad ctermfg=124 ctermbg=224 cterm=NONE
+hi SpellBad ctermfg=NONE ctermbg=NONE cterm=undercurl
+hi SpellCap ctermfg=NONE ctermbg=NONE cterm=undercurl
+hi SpellLocal ctermfg=fg ctermbg=NONE cterm=NONE
+hi SpellRare ctermfg=NONE ctermbg=NONE cterm=NONE
+hi Statement ctermfg=fg ctermbg=NONE cterm=italic
+hi Terminal ctermfg=fg ctermbg=254 cterm=NONE
+" hi Todo ctermfg=124 ctermbg=224 cterm=NONE
+hi ToolbarButton ctermfg=fg ctermbg=NONE cterm=NONE
+hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=NONE
+hi Type ctermfg=NONE ctermbg=NONE cterm=italic
+hi Underlined ctermfg=fg ctermbg=NONE cterm=underline
+hi VertSplit ctermfg=251 ctermbg=NONE cterm=NONE
+hi VisualNOS ctermfg=NONE ctermbg=255 cterm=NONE
+hi WarningMsg ctermfg=94 ctermbg=229 cterm=NONE
+hi WhichKeySeperator ctermfg=fg ctermbg=NONE cterm=NONE
+hi Whitespace ctermfg=7 ctermbg=NONE cterm=NONE
 
 " " These are Vim only
 if !has('nvim')
-	hi Tooltip ctermfg=fg ctermbg=253 cterm=none
-	hi Menu ctermfg=fg ctermbg=253 cterm=none
+	hi Tooltip ctermfg=fg ctermbg=253 cterm=NONE
+	hi Menu ctermfg=fg ctermbg=253 cterm=NONE
 endif
 
-hi FoldColumn ctermfg=8 ctermbg=none cterm=none
-hi Folded ctermfg=8 ctermbg=none cterm=none
-
-hi SignColumn ctermfg=241 ctermbg=255 cterm=none
-hi LineNr ctermfg=7 ctermbg=none cterm=none
+hi FoldColumn ctermfg=8 ctermbg=NONE cterm=NONE
+hi Folded ctermfg=8 ctermbg=NONE cterm=NONE
 
 hi! link EndOfBuffer NonText
 hi! link QuickFixLine Search
@@ -122,87 +130,7 @@ hi! link lCursor Cursor
 hi! link jsParensError Normal
 hi! link WhichKeyFloating Pmenu
 hi! link PmenuSbar Pmenu
+hi! link IncSearch Search
 hi! link Substitute IncSearch
 hi! link WildMenu Visual
 hi! link Title Normal
-
-" -------------- LSP ----------------------------
-hi! link LspDiagnosticsDefaultError Error
-hi! link LspDiagnosticsDefaultHint LspDiagnosticsDefaultInformation
-hi! link LspDiagnosticsDefaultWarning WarningMsg
-hi! link LspDiagnosticsDefaultInformation DiffText
-hi! link LspDiagnosticsUnderlineError Error
-
-" -------------- Vim Script ---------------------
-" v-- Some of these are normally linked to Type, which is italicized, leading
-" to lots of italics in this file
-hi! link vimGroup Normal
-hi! link vimHiGui Normal
-hi! link vimHiKeyList Normal
-hi! link vimHiGroup Normal
-hi! link vimHiCTerm Normal
-hi! link vimHiCTermFgBg Normal
-hi! link vimHiGuiFgBg Normal
-
-" -------------- Markdown -----------------------
-hi markdownHeading ctermfg=none ctermbg=none cterm=underline
-hi! link markdownH1 markdownHeading
-hi! link markdownH1Delimiter markdownHeadingDelimiter  " unnecessary?
-hi! link markdownH2 markdownHeading
-hi! link markdownH3 markdownHeading
-hi! link markdownH4 markdownHeading
-hi! link markdownRule Constant
-hi markdownItalic ctermfg=none ctermbg=none cterm=italic
-hi markdownBold ctermfg=none ctermbg=none cterm=bold
-hi markdownBoldItalic ctermfg=none ctermbg=none cterm=bold,italic
-hi markdownCode ctermfg=none ctermbg=none cterm=italic
-hi! link markdownCodeBlock markdownCode
-hi! link markdownLink Underlined
-hi! link markdownLinkText Underlined
-hi! link markdownUrl markdownLink
-hi! link markdownHeadingDelimiter Constant
-hi! link markdownItalicDelimiter Constant
-hi! link markdownBoldDelimiter Constant
-hi! link markdownBoldItalicDelimiter Constant
-hi! link markdownBlockquote Constant
-hi! link markdownCodeDelimiter Constant
-hi! link markdownUrlDelimiter Constant
-hi! link markdownLinkDelimiter Constant
-hi! link markdownLinkTextDelimiter Constant
-hi! link markdownListMarker Constant
-hi! link markdownOrderedListMarker Constant
-
-" -------------- Pandoc -------------------------
-hi! link pandocTitleBlock SpecialComment  " this doesn't work?
-hi! link pandocTitleBlockTitle pandocTitleBlock
-hi! link pandocTitleBlockMark Constant
-hi! link pandocSetexHeader Normal
-hi pandocAtxHeader cterm=underline
-hi! link pandocAtxHeaderMark Constant
-hi! link pandocAtxStart Constant
-hi! link pandocUListItemBullet Constant
-hi! link pandocListItemBullet Constant
-hi! link pandocListItemBulletId Constant
-hi! link pandocReferenceUrl Underlined
-hi! link pandocImageIcon Comment
-
-" -------------- Help ---------------------------
-hi helpHyperTextJump ctermfg=none ctermbg=none cterm=underline
-hi helpHeadline ctermfg=none ctermbg=none cterm=bold
-hi! link helpExample Normal
-hi! link helpCommand Constant
-hi! link helpBacktick Constant
-
-" -------------- YAML ---------------------------
-hi! link yamlDocumentStart Constant
-hi! link yamlBlockMappingDelimiter Constant
-hi! link yamlBlockCollectionItemStart Constant
-hi! link yamlFlowIndicator Constant
-hi! link yamlBlockScalarHeader Constant
-
-" -------------- XML ----------------------------
-hi! link xmlProcessingDelim Normal
-hi xmlTagName ctermfg=none ctermbg=none cterm=none
-
-" netrw
-hi! link netrwTreeBar Constant

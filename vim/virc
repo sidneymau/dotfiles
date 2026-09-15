@@ -8,6 +8,9 @@ set nocompatible
 " set relativenumber
 " set cursorline
 
+
+" set textwidth=72
+
 " Tabs
 set tabstop=8
 

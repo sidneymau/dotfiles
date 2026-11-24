@@ -27,7 +27,7 @@ set directory=~/.config/vim/.swp//
 set viminfo+=n~/.config/vim/viminfo
 
 " Use system-wide clipboard
-set clipboard+=unnamedplus
+" set clipboard+=unnamedplus
 " instead, use "* and "+ registers
 " "+ to yank and paste elsewhere
 " "* to paste from elsewhere
@@ -38,6 +38,9 @@ set list
 
 " Disable mouse
 set mouse=
+
+set ignorecase
+set smartcase
 
 set spelllang=en
 set spell
